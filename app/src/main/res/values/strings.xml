@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Kulima Gold App</string>
+    <string name="kulima_gold">kulima_Gold</string>
+    <string name="enter_email">enter_email</string>
+    <string name="enter_password">enter_password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up.</string>
+    <string name="hello_beloved_customers">Hello Beloved Customers</string>
+    <string name="hello_customers">hello_customers</string>
+    <string name="available_pesticides">AVAILABLE PESTICIDES</string>
+    <string name="MK200">MK200</string>
+    <string name="actellic">Actellic</string>
+    <string name="search_product_here">Search product here</string>
+    <string name="many_varieties_on_stock">Many varieties on stock</string>
+    <string name="gnuts">Gnuts</string>
+    <string name="other_products_on_tock">other products on tock</string>
+    <string name="other_products_on_stock">other_products_on_stock</string>
+    <string name="home">Home</string>
+    <string name="help">help</string>
+    <string name="add">+Add</string>
+    <string name="mk5000">MK5000</string>
+    <string name="key_controller">Key Controller</string>
+    <string name="favourites">favourites</string>
+    <string name="hELP">Help?</string>
+    <string name="settings">Settings</string>
+</resources>

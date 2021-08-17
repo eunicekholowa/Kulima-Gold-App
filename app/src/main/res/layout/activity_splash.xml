@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="@drawable/logogo">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="KULIMA GOLD"
+        android:textColor="@color/orange"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:text="WELCOME"
+        android:textColor="@color/orange"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/splash_btn"
+        android:layout_marginBottom="195dp"
+        android:text="Admin" />
+
+    <Button
+        android:id="@+id/blauncher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop = "350dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/splash_btn"
+        android:backgroundTint="@color/green"
+        android:text="CUSTOMER" />
+</RelativeLayout>
