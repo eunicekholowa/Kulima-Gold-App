@@ -33,7 +33,7 @@ public class CustomerSigninActivity extends AppCompatActivity {
         bRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CustomerSigninActivity.this, RegisterActivity.class);
+                Intent intent = new Intent(CustomerSigninActivity.this, CustomerRegisterActivity.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +49,7 @@ public class CustomerSigninActivity extends AppCompatActivity {
               else
                   {
                       Boolean checkuserpass= MyDB.checkEmailPassword(user, pass);
-                      if(checkuserpass == true) {
+                      if(checkuserpass = true) {
                               Toast.makeText(CustomerSigninActivity.this, "Sign in  Successifully", Toast.LENGTH_SHORT).show();
                               Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                               startActivity(intent);
