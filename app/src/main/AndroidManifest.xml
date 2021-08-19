@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KulimaGoldApplication">
-        <activity android:name=".ShowDetailsActivity"></activity>
+        <activity android:name=".AdminSigninActivity"></activity>
+        <activity android:name=".CookingOilActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".ItemsSelectedActivity" />
+        <activity android:name=".ShowDetailsActivity" />
         <activity android:name=".SoyapiecesActivity" />
         <activity android:name=".OrangecidesActivity" />
         <activity android:name=".OthersActivity" />
@@ -18,7 +22,7 @@
         <activity android:name=".FoodItemsActvity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".SigninActivity" />
+        <activity android:name=".CustomerSigninActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

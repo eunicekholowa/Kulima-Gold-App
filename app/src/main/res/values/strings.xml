@@ -23,4 +23,7 @@
     <string name="favourites">favourites</string>
     <string name="hELP">Help?</string>
     <string name="settings">Settings</string>
+    <string name="mk_0">MK 0</string>
+    <string name="welcome_our_customer">Welcome Our Customer</string>
+    <string name="enter_emai">Enter Email</string>
 </resources>

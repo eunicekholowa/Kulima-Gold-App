@@ -21,11 +21,11 @@ public class SplashActivity extends AppCompatActivity {
 
 
         blauncher.setOnClickListener(v->{
-            startActivity(new Intent(SplashActivity.this, SigninActivity.class));
+            startActivity(new Intent(SplashActivity.this, CustomerSigninActivity.class));
         });
 
         bAdmin.setOnClickListener(v ->{
-            startActivity(new Intent( SplashActivity.this, SigninActivity.class));
+            startActivity(new Intent( SplashActivity.this, AdminSigninActivity.class));
         });
     }
 }

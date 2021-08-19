@@ -32,7 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
         sRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( RegisterActivity.this,SigninActivity.class);
+                Intent intent = new Intent( RegisterActivity.this, CustomerSigninActivity.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +52,7 @@ public class RegisterActivity extends AppCompatActivity {
                             Boolean insert = MyDB.insertData(user, pass);
                             if (insert == true) {
                                 Toast.makeText(RegisterActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(), SigninActivity.class);
+                                Intent intent = new Intent(getApplicationContext(), CustomerSigninActivity.class);
                                 startActivity(intent);
 
                             } else {
