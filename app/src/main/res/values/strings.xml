@@ -26,4 +26,9 @@
     <string name="mk_0">MK 0</string>
     <string name="welcome_our_customer">Welcome Our Customer</string>
     <string name="enter_emai">Enter Email</string>
+    <string name="mk9000_unit">MK9000/unit</string>
+    <string name="mk1500_unit">MK1500/unit</string>
+    <string name="mk4000_2l">MK4000/2L</string>
+    <string name="mk2000_unit">MK2000/unit</string>
+    <string name="mk8900_unit">MK8900/unit</string>
 </resources>

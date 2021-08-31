@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CardListActivity">
+    -<ScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/scrollView4">
+
+
+    -<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/textView12"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#ff3d00"
+        android:text="My Cart"
+        android:layout_marginTop="18dp"
+        android:gravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerview"/>
+
+
+    -<LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/totalItems"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#373b54"
+        android:text="Items Total:"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/totalFeeTxt"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#373b54"
+        android:text="K0"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text2"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#373b54"
+        android:text="Delivery Services:"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/deliveryTxt"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#373b54"
+        android:text="K0"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/Txt"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#373b54"
+        android:text="Tax:"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/taxTxt"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#373b54"
+        android:text="K0"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/totalAmount"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#373b54"
+        android:text="Total:"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/totalTxt"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#373b54"
+        android:text="K0"/>
+
+</LinearLayout>
+
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:id="@+id/textView16"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="CheckOut"
+        android:gravity="center"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/orange_button"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>
+
+</ScrollView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/emptyTxt"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Your card is empty"
+        android:visibility="gone"/>
+
+
+    -<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_height="100dp"
+    android:layout_width="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="@+id/scrollView4">
+
+
+    -<com.google.android.material.bottomappbar.BottomAppBar
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/app_bar"
+    app:fabCradleVerticalOffset="6dp"
+    app:fabCradleRoundedCornerRadius="50dp"
+    app:fabCradleMargin="8dp"
+    android:backgroundTint="#f6f6f6"
+    android:layout_gravity="bottom">
+
+
+    -<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+
+    -<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="0dp"
+    android:id="@+id/homeBtn"
+    android:orientation="vertical"
+    android:layout_weight="0.2">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/image1"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_baseline_home_24"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/text4"
+        android:textSize="12sp"
+        android:textColor="#676767"
+        android:gravity="center"
+        android:text="Home"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="0dp"
+    android:orientation="vertical"
+    android:layout_weight="0.2">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/image2"
+        app:srcCompat="@drawable/ic_baseline_help_24"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/text5"
+        android:textSize="12sp"
+        android:textColor="#676767"
+        android:gravity="center"
+        android:text="Help?"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="0dp"
+    android:orientation="vertical"
+    android:layout_weight="0.2"
+    android:visibility="invisible">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/image3"
+        app:srcCompat="@drawable/ic_baseline_support_24"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/text6"
+        android:textSize="12sp"
+        android:textColor="#676767"
+        android:gravity="center"
+        android:text="Home"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="0dp"
+    android:orientation="vertical"
+    android:layout_weight="0.2">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/image7"
+        app:srcCompat="@drawable/button_favourite"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/textV8"
+        android:textSize="12sp"
+        android:textColor="#676767"
+        android:gravity="center"
+        android:text="Favourites"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="0dp"
+    android:orientation="vertical"
+    android:layout_weight="0.2">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/imageView5"
+        app:srcCompat="@drawable/settings_icon"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/textView11"
+        android:textSize="12sp"
+        android:textColor="#676767"
+        android:gravity="center"
+        android:text="Settings"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/card_btn"
+        app:backgroundTint="#ff5e00"
+        android:backgroundTint="#ff5e00"
+        app:tint="#ffffff"
+        app:maxImageSize="30dp"
+        app:layout_anchor="@id/app_bar"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        android:elevation="3dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
