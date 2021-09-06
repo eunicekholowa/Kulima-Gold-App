@@ -1,10 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.AdminMainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addcat"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="27dp"
+        android:text="Add New Product"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:textColor="@color/orange"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linear_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/addcat"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/cooking"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/soyya"/>
+        <ImageView
+            android:id="@+id/foodItems"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/soyachunks" />
+        <ImageView
+            android:id="@+id/soya"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/soyapiecess"/>
+        <ImageView
+            android:id="@+id/sheet"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/soyapiecess"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
 

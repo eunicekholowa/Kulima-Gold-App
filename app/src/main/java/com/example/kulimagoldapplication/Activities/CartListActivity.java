@@ -90,7 +90,7 @@ public class CartListActivity extends AppCompatActivity {
         taxTxt.setText("K" + tax);
         deliveryTxt.setText("K" + delivery);
         totalTxt.setText("K" + total);
-    }
+    }             
 
     private void initView() {
         recyclerViewList = findViewById(R.id.recyclerview);

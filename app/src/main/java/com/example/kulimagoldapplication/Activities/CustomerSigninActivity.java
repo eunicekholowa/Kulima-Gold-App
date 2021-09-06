@@ -53,7 +53,7 @@ public class CustomerSigninActivity extends AppCompatActivity {
                 else
                 {
                     Boolean checkuserpass= MyDB.checkEmailPassword(user, pass);
-                    if(checkuserpass = true) {
+                    if(checkuserpass == true) {
                         Toast.makeText(CustomerSigninActivity.this, "Sign in  Successifully", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);

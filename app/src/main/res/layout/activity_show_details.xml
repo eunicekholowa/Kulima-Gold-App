@@ -52,7 +52,8 @@
                     android:id="@+id/minusBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/ic_baseline_minimize_24" />
+                    app:srcCompat="@drawable/ic_baseline_minimize_24"
+                    tools:ignore="VectorDrawableCompat" />
 
                 <TextView
                     android:id="@+id/numberOrderTxt"
